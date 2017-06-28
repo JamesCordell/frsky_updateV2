@@ -13,6 +13,7 @@ The build instructions are.
 
 Note:
 If you are running ubuntu 16 you will need to install older qt4 build libraries.
+
 apt-get install qu4-default
 
 
