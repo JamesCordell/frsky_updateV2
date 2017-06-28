@@ -11,6 +11,11 @@ http://www.frsky-rc.com/download/files/How%20To/How%20to%20upgrade%20Frsky%20sma
 
 The build instructions are.
 
+Note:
+If you are running ubuntu 16 you will need to install older qt4 build libraries.
+apt-get install qu4-default
+
+
 Unzip the archive
 
 cd frsky_updateV2/linux
