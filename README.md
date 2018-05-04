@@ -1,3 +1,5 @@
+This tool did not work last time I tried it and needs investigating.
+
 # frsky_updateV2
 Frsky_updateV2 tool used to update radio receivers and transmitters of the frsky range. Basically if you purchased a cheap receiver and it does not state which firmware is on it. This will either be Non_EU or EU. This tool is to be used with the fuc-3 usb lead. This process is not necessary if one has a Taranis Transmitter as this can facilitate the upgrade process.
 
