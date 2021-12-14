@@ -1,9 +1,14 @@
-infile(config.pri, QEXTSERIALPORT_LIBRARY, yes): CONFIG += qextserialport-library
-qextserialport-library{
-    infile(config.pri, QEXTSERIALPORT_STATIC, yes): CONFIG += qextserialport-static
+exists(config.pri) {
+    infile(config.pri, QEXTSERIALPORT_LIBRARY, yes): CONFIG += qextserialport-library
+    qextserialport-library{
+        infile(config.pri, QEXTSERIALPORT_STATIC, yes): CONFIG += qextserialport-static
+    }
+
+    !infile(config.pri, QEXTSERIALPORT_WITH_UDEV, yes): CONFIG += qextserialport-no-udev
+} else {
+    #comment following to enable "udev" under linux without a config.pri
+    CONFIG += qextserialport-no-udev
 }
-#comment following to enable "udev" under linux without a config.pri
-!infile(config.pri, QEXTSERIALPORT_WITH_UDEV, yes): CONFIG += qextserialport-no-udev
 
 # Though maybe you have been fimiliar with "TEMPLATE += fakelib" and "TEMPLATE -= fakelib",
 # but it don't work when you using "qmake -tp XXX". So I use another variable Here.
