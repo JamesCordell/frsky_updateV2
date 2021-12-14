@@ -20,3 +20,6 @@
 .svn
 *.qm
 *.pyc
+
+# ignore Linux build folder
+linux/build/
